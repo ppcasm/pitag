@@ -174,9 +174,13 @@ void set_rpi_conf(){
 			PERI_BASE_ADDR = 0x20000000;
 			//wiring = 2;
 			break;
-
+		case 0xa01041:
+			printf("RaspberryPi 2 detected! (Model: B) (PCB Rev: 1.1, UK made) (Memory: 1GB)\n");
+			PERI_BASE_ADDR = 0x3F000000;
+			//wiring = 2;
+			break;
 		case 0xa21041:
-			printf("RaspberryPi 2 detected! (Model: B) (PCB Rev: 1.1) (Memory: 1GB)\n");
+			printf("RaspberryPi 2 detected! (Model: B) (PCB Rev: 1.1, CN made) (Memory: 1GB)\n");
 			PERI_BASE_ADDR = 0x3F000000;
 			//wiring = 2;
 			break;
